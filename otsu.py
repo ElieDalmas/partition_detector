@@ -13,6 +13,7 @@ class OtsuThreshold:
 
     Usage :
         thr, mask = OtsuThreshold().threshold(img_gray)
+        thr, mask = OtsuThreshold.apply(img_gray)
     """
 
     def threshold(self, img: np.ndarray) -> tuple[int, np.ndarray]:
@@ -26,6 +27,11 @@ class OtsuThreshold:
         thr = self._compute_otsu_threshold(img)
         mask = self._apply_binary_inv(img, thr)
         return thr, mask
+
+    @staticmethod
+    def apply(img: np.ndarray) -> tuple[int, np.ndarray]:
+        """Static Shortcut"""
+        return OtsuThreshold().threshold(img)
 
     # region Otsu threshold
 
