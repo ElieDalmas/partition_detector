@@ -1,0 +1,5 @@
+# usefull only to garanty same dev env
+.python-version
+uv.lock
+
+.idea/
