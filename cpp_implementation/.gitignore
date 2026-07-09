@@ -1,0 +1,10 @@
+build/
+data/
+output/
+
+*.o
+*.tar.gz
+
+compile_commands.json
+
+.cache/
