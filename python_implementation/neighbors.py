@@ -23,7 +23,7 @@ class KNeighborsClassifier:
         :param n_neighbors: Number of neighbors
         """
         if n_neighbors < 1:
-            raise ValueError("n_neighbors doit être >= 1")
+            raise ValueError("n_neighbors must be >= 1")
         self.n_neighbors = n_neighbors
         self._X_train: np.ndarray | None = None
         self._y_train: list | None = None

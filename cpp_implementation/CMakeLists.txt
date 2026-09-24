@@ -22,7 +22,7 @@ add_library(omr_core
 
 target_include_directories(omr_core PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/third_parties
+    ${CMAKE_CURRENT_SOURCE_DIR}/third_parties
     ${OpenCV_INCLUDE_DIRS}
 )
 
